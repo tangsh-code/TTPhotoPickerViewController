@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D7223C2627E983006A8CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7223B2627E983006A8CFB /* AppDelegate.m */; };
+		24D722422627E983006A8CFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722412627E983006A8CFB /* ViewController.m */; };
+		24D722452627E983006A8CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D722432627E983006A8CFB /* Main.storyboard */; };
+		24D722472627E985006A8CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D722462627E985006A8CFB /* Assets.xcassets */; };
+		24D7224A2627E985006A8CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D722482627E985006A8CFB /* LaunchScreen.storyboard */; };
+		24D7224D2627E985006A8CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7224C2627E985006A8CFB /* main.m */; };
+		24D722572627E986006A8CFB /* TTPhotoPickerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722562627E986006A8CFB /* TTPhotoPickerViewControllerTests.m */; };
+		24D722622627E986006A8CFB /* TTPhotoPickerViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722612627E986006A8CFB /* TTPhotoPickerViewControllerUITests.m */; };
+		24D7227E2627EACD006A8CFB /* SinglePhotoPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7227D2627EACD006A8CFB /* SinglePhotoPickerView.m */; };
+		24D722872627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722862627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.m */; };
+		24D7229126282ADE006A8CFB /* TTPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7229026282ADE006A8CFB /* TTPhotoPickerViewController.m */; };
+		24D7229B26282DDD006A8CFB /* TTPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7229926282DDD006A8CFB /* TTPhotoCollectionViewCell.m */; };
+		24D7229C26282DDD006A8CFB /* TTPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D7229A26282DDD006A8CFB /* TTPhotoCollectionViewCell.xib */; };
+		24D722A226282E89006A8CFB /* TTPHAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722A126282E89006A8CFB /* TTPHAsset.m */; };
+		24D722A8262833CD006A8CFB /* TTAlbumPermissionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722A7262833CD006A8CFB /* TTAlbumPermissionsView.m */; };
+		24D722DB26295AEB006A8CFB /* TTPhotoTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722DA26295AEB006A8CFB /* TTPhotoTopView.m */; };
+		24D722E126295EE5006A8CFB /* TTPhotoBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722E026295EE5006A8CFB /* TTPhotoBottomView.m */; };
+		24D722F7262A833B006A8CFB /* TTPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722F6262A833B006A8CFB /* TTPhotoViewController.m */; };
+		24D72300262D13BE006A8CFB /* TTPhotoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D722FF262D13BE006A8CFB /* TTPhotoPageViewController.m */; };
+		24D7230C262D5B08006A8CFB /* TTPhotoPageTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7230B262D5B08006A8CFB /* TTPhotoPageTopView.m */; };
+		24D72312262D7A55006A8CFB /* TTPhotoPageBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D72311262D7A55006A8CFB /* TTPhotoPageBottomView.m */; };
+		24D72318262E6284006A8CFB /* TTPhotoPageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D72317262E6284006A8CFB /* TTPhotoPageCollectionView.m */; };
+		24D7231F262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D7231D262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.m */; };
+		24D72320262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D7231E262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D722532627E986006A8CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D7222F2627E983006A8CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D722362627E983006A8CFB;
+			remoteInfo = TTPhotoPickerViewController;
+		};
+		24D7225E2627E986006A8CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D7222F2627E983006A8CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D722362627E983006A8CFB;
+			remoteInfo = TTPhotoPickerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24D722372627E983006A8CFB /* TTPhotoPickerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTPhotoPickerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D7223A2627E983006A8CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D7223B2627E983006A8CFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24D722402627E983006A8CFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24D722412627E983006A8CFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24D722442627E983006A8CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24D722462627E985006A8CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D722492627E985006A8CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D7224B2627E985006A8CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D7224C2627E985006A8CFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24D722522627E986006A8CFB /* TTPhotoPickerViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTPhotoPickerViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D722562627E986006A8CFB /* TTPhotoPickerViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPickerViewControllerTests.m; sourceTree = "<group>"; };
+		24D722582627E986006A8CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D7225D2627E986006A8CFB /* TTPhotoPickerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTPhotoPickerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D722612627E986006A8CFB /* TTPhotoPickerViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPickerViewControllerUITests.m; sourceTree = "<group>"; };
+		24D722632627E986006A8CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D7227C2627EACD006A8CFB /* SinglePhotoPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglePhotoPickerView.h; sourceTree = "<group>"; };
+		24D7227D2627EACD006A8CFB /* SinglePhotoPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglePhotoPickerView.m; sourceTree = "<group>"; };
+		24D722852627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglePhotoPickerViewDelegate.h; sourceTree = "<group>"; };
+		24D722862627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglePhotoPickerViewDelegate.m; sourceTree = "<group>"; };
+		24D7228F26282ADE006A8CFB /* TTPhotoPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPickerViewController.h; sourceTree = "<group>"; };
+		24D7229026282ADE006A8CFB /* TTPhotoPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPickerViewController.m; sourceTree = "<group>"; };
+		24D7229826282DDD006A8CFB /* TTPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		24D7229926282DDD006A8CFB /* TTPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		24D7229A26282DDD006A8CFB /* TTPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		24D722A026282E89006A8CFB /* TTPHAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPHAsset.h; sourceTree = "<group>"; };
+		24D722A126282E89006A8CFB /* TTPHAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPHAsset.m; sourceTree = "<group>"; };
+		24D722A6262833CD006A8CFB /* TTAlbumPermissionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAlbumPermissionsView.h; sourceTree = "<group>"; };
+		24D722A7262833CD006A8CFB /* TTAlbumPermissionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAlbumPermissionsView.m; sourceTree = "<group>"; };
+		24D722C726293385006A8CFB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		24D722D926295AEB006A8CFB /* TTPhotoTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoTopView.h; sourceTree = "<group>"; };
+		24D722DA26295AEB006A8CFB /* TTPhotoTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoTopView.m; sourceTree = "<group>"; };
+		24D722DF26295EE5006A8CFB /* TTPhotoBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoBottomView.h; sourceTree = "<group>"; };
+		24D722E026295EE5006A8CFB /* TTPhotoBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoBottomView.m; sourceTree = "<group>"; };
+		24D722F5262A833B006A8CFB /* TTPhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoViewController.h; sourceTree = "<group>"; };
+		24D722F6262A833B006A8CFB /* TTPhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoViewController.m; sourceTree = "<group>"; };
+		24D722FE262D13BE006A8CFB /* TTPhotoPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPageViewController.h; sourceTree = "<group>"; };
+		24D722FF262D13BE006A8CFB /* TTPhotoPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPageViewController.m; sourceTree = "<group>"; };
+		24D7230A262D5B08006A8CFB /* TTPhotoPageTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPageTopView.h; sourceTree = "<group>"; };
+		24D7230B262D5B08006A8CFB /* TTPhotoPageTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPageTopView.m; sourceTree = "<group>"; };
+		24D72310262D7A55006A8CFB /* TTPhotoPageBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPageBottomView.h; sourceTree = "<group>"; };
+		24D72311262D7A55006A8CFB /* TTPhotoPageBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPageBottomView.m; sourceTree = "<group>"; };
+		24D72316262E6284006A8CFB /* TTPhotoPageCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPageCollectionView.h; sourceTree = "<group>"; };
+		24D72317262E6284006A8CFB /* TTPhotoPageCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPageCollectionView.m; sourceTree = "<group>"; };
+		24D7231C262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPhotoPageCollectionViewCell.h; sourceTree = "<group>"; };
+		24D7231D262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPhotoPageCollectionViewCell.m; sourceTree = "<group>"; };
+		24D7231E262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTPhotoPageCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D722342627E983006A8CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D7224F2627E986006A8CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D7225A2627E986006A8CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D7222E2627E983006A8CFB = {
+			isa = PBXGroup;
+			children = (
+				24D722392627E983006A8CFB /* TTPhotoPickerViewController */,
+				24D722552627E986006A8CFB /* TTPhotoPickerViewControllerTests */,
+				24D722602627E986006A8CFB /* TTPhotoPickerViewControllerUITests */,
+				24D722382627E983006A8CFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24D722382627E983006A8CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D722372627E983006A8CFB /* TTPhotoPickerViewController.app */,
+				24D722522627E986006A8CFB /* TTPhotoPickerViewControllerTests.xctest */,
+				24D7225D2627E986006A8CFB /* TTPhotoPickerViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D722392627E983006A8CFB /* TTPhotoPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24D7223A2627E983006A8CFB /* AppDelegate.h */,
+				24D7223B2627E983006A8CFB /* AppDelegate.m */,
+				24D722402627E983006A8CFB /* ViewController.h */,
+				24D722412627E983006A8CFB /* ViewController.m */,
+				24D722E5262A811E006A8CFB /* TTPageViewController */,
+				24D7228E26282A7E006A8CFB /* TTPhotoPicker */,
+				24D722752627EA31006A8CFB /* SinglePhotoPicker */,
+				24D722432627E983006A8CFB /* Main.storyboard */,
+				24D722462627E985006A8CFB /* Assets.xcassets */,
+				24D722482627E985006A8CFB /* LaunchScreen.storyboard */,
+				24D7224B2627E985006A8CFB /* Info.plist */,
+				24D7224C2627E985006A8CFB /* main.m */,
+				24D722C726293385006A8CFB /* PrefixHeader.pch */,
+			);
+			path = TTPhotoPickerViewController;
+			sourceTree = "<group>";
+		};
+		24D722552627E986006A8CFB /* TTPhotoPickerViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D722562627E986006A8CFB /* TTPhotoPickerViewControllerTests.m */,
+				24D722582627E986006A8CFB /* Info.plist */,
+			);
+			path = TTPhotoPickerViewControllerTests;
+			sourceTree = "<group>";
+		};
+		24D722602627E986006A8CFB /* TTPhotoPickerViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24D722612627E986006A8CFB /* TTPhotoPickerViewControllerUITests.m */,
+				24D722632627E986006A8CFB /* Info.plist */,
+			);
+			path = TTPhotoPickerViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		24D722752627EA31006A8CFB /* SinglePhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				24D7227C2627EACD006A8CFB /* SinglePhotoPickerView.h */,
+				24D7227D2627EACD006A8CFB /* SinglePhotoPickerView.m */,
+				24D722852627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.h */,
+				24D722862627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.m */,
+			);
+			path = SinglePhotoPicker;
+			sourceTree = "<group>";
+		};
+		24D7228E26282A7E006A8CFB /* TTPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				24D7228F26282ADE006A8CFB /* TTPhotoPickerViewController.h */,
+				24D7229026282ADE006A8CFB /* TTPhotoPickerViewController.m */,
+				24D7229826282DDD006A8CFB /* TTPhotoCollectionViewCell.h */,
+				24D7229926282DDD006A8CFB /* TTPhotoCollectionViewCell.m */,
+				24D7229A26282DDD006A8CFB /* TTPhotoCollectionViewCell.xib */,
+				24D722A026282E89006A8CFB /* TTPHAsset.h */,
+				24D722A126282E89006A8CFB /* TTPHAsset.m */,
+				24D722A6262833CD006A8CFB /* TTAlbumPermissionsView.h */,
+				24D722A7262833CD006A8CFB /* TTAlbumPermissionsView.m */,
+				24D722D926295AEB006A8CFB /* TTPhotoTopView.h */,
+				24D722DA26295AEB006A8CFB /* TTPhotoTopView.m */,
+				24D722DF26295EE5006A8CFB /* TTPhotoBottomView.h */,
+				24D722E026295EE5006A8CFB /* TTPhotoBottomView.m */,
+			);
+			path = TTPhotoPicker;
+			sourceTree = "<group>";
+		};
+		24D722E5262A811E006A8CFB /* TTPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24D722FE262D13BE006A8CFB /* TTPhotoPageViewController.h */,
+				24D722FF262D13BE006A8CFB /* TTPhotoPageViewController.m */,
+				24D722F5262A833B006A8CFB /* TTPhotoViewController.h */,
+				24D722F6262A833B006A8CFB /* TTPhotoViewController.m */,
+				24D7230A262D5B08006A8CFB /* TTPhotoPageTopView.h */,
+				24D7230B262D5B08006A8CFB /* TTPhotoPageTopView.m */,
+				24D72316262E6284006A8CFB /* TTPhotoPageCollectionView.h */,
+				24D72317262E6284006A8CFB /* TTPhotoPageCollectionView.m */,
+				24D7231C262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.h */,
+				24D7231D262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.m */,
+				24D7231E262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.xib */,
+				24D72310262D7A55006A8CFB /* TTPhotoPageBottomView.h */,
+				24D72311262D7A55006A8CFB /* TTPhotoPageBottomView.m */,
+			);
+			path = TTPageViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D722362627E983006A8CFB /* TTPhotoPickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D722662627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewController" */;
+			buildPhases = (
+				24D722332627E983006A8CFB /* Sources */,
+				24D722342627E983006A8CFB /* Frameworks */,
+				24D722352627E983006A8CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTPhotoPickerViewController;
+			productName = TTPhotoPickerViewController;
+			productReference = 24D722372627E983006A8CFB /* TTPhotoPickerViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D722512627E986006A8CFB /* TTPhotoPickerViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D722692627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewControllerTests" */;
+			buildPhases = (
+				24D7224E2627E986006A8CFB /* Sources */,
+				24D7224F2627E986006A8CFB /* Frameworks */,
+				24D722502627E986006A8CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D722542627E986006A8CFB /* PBXTargetDependency */,
+			);
+			name = TTPhotoPickerViewControllerTests;
+			productName = TTPhotoPickerViewControllerTests;
+			productReference = 24D722522627E986006A8CFB /* TTPhotoPickerViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24D7225C2627E986006A8CFB /* TTPhotoPickerViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D7226C2627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewControllerUITests" */;
+			buildPhases = (
+				24D722592627E986006A8CFB /* Sources */,
+				24D7225A2627E986006A8CFB /* Frameworks */,
+				24D7225B2627E986006A8CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D7225F2627E986006A8CFB /* PBXTargetDependency */,
+			);
+			name = TTPhotoPickerViewControllerUITests;
+			productName = TTPhotoPickerViewControllerUITests;
+			productReference = 24D7225D2627E986006A8CFB /* TTPhotoPickerViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D7222F2627E983006A8CFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					24D722362627E983006A8CFB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					24D722512627E986006A8CFB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 24D722362627E983006A8CFB;
+					};
+					24D7225C2627E986006A8CFB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 24D722362627E983006A8CFB;
+					};
+				};
+			};
+			buildConfigurationList = 24D722322627E983006A8CFB /* Build configuration list for PBXProject "TTPhotoPickerViewController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24D7222E2627E983006A8CFB;
+			productRefGroup = 24D722382627E983006A8CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D722362627E983006A8CFB /* TTPhotoPickerViewController */,
+				24D722512627E986006A8CFB /* TTPhotoPickerViewControllerTests */,
+				24D7225C2627E986006A8CFB /* TTPhotoPickerViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D722352627E983006A8CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D72320262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.xib in Resources */,
+				24D7224A2627E985006A8CFB /* LaunchScreen.storyboard in Resources */,
+				24D722472627E985006A8CFB /* Assets.xcassets in Resources */,
+				24D722452627E983006A8CFB /* Main.storyboard in Resources */,
+				24D7229C26282DDD006A8CFB /* TTPhotoCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D722502627E986006A8CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D7225B2627E986006A8CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D722332627E983006A8CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D722422627E983006A8CFB /* ViewController.m in Sources */,
+				24D722DB26295AEB006A8CFB /* TTPhotoTopView.m in Sources */,
+				24D7223C2627E983006A8CFB /* AppDelegate.m in Sources */,
+				24D722872627EC7D006A8CFB /* SinglePhotoPickerViewDelegate.m in Sources */,
+				24D7231F262E63C5006A8CFB /* TTPhotoPageCollectionViewCell.m in Sources */,
+				24D722E126295EE5006A8CFB /* TTPhotoBottomView.m in Sources */,
+				24D72300262D13BE006A8CFB /* TTPhotoPageViewController.m in Sources */,
+				24D7230C262D5B08006A8CFB /* TTPhotoPageTopView.m in Sources */,
+				24D7227E2627EACD006A8CFB /* SinglePhotoPickerView.m in Sources */,
+				24D7224D2627E985006A8CFB /* main.m in Sources */,
+				24D722F7262A833B006A8CFB /* TTPhotoViewController.m in Sources */,
+				24D7229126282ADE006A8CFB /* TTPhotoPickerViewController.m in Sources */,
+				24D722A8262833CD006A8CFB /* TTAlbumPermissionsView.m in Sources */,
+				24D72318262E6284006A8CFB /* TTPhotoPageCollectionView.m in Sources */,
+				24D72312262D7A55006A8CFB /* TTPhotoPageBottomView.m in Sources */,
+				24D722A226282E89006A8CFB /* TTPHAsset.m in Sources */,
+				24D7229B26282DDD006A8CFB /* TTPhotoCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D7224E2627E986006A8CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D722572627E986006A8CFB /* TTPhotoPickerViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D722592627E986006A8CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D722622627E986006A8CFB /* TTPhotoPickerViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D722542627E986006A8CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D722362627E983006A8CFB /* TTPhotoPickerViewController */;
+			targetProxy = 24D722532627E986006A8CFB /* PBXContainerItemProxy */;
+		};
+		24D7225F2627E986006A8CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D722362627E983006A8CFB /* TTPhotoPickerViewController */;
+			targetProxy = 24D7225E2627E986006A8CFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24D722432627E983006A8CFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D722442627E983006A8CFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24D722482627E985006A8CFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D722492627E985006A8CFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D722642627E986006A8CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D722652627E986006A8CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D722672627E986006A8CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				GCC_PREFIX_HEADER = TTPhotoPickerViewController/PrefixHeader.pch;
+				INFOPLIST_FILE = TTPhotoPickerViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24D722682627E986006A8CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				GCC_PREFIX_HEADER = TTPhotoPickerViewController/PrefixHeader.pch;
+				INFOPLIST_FILE = TTPhotoPickerViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D7226A2627E986006A8CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				INFOPLIST_FILE = TTPhotoPickerViewControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTPhotoPickerViewController.app/TTPhotoPickerViewController";
+			};
+			name = Debug;
+		};
+		24D7226B2627E986006A8CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				INFOPLIST_FILE = TTPhotoPickerViewControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTPhotoPickerViewController.app/TTPhotoPickerViewController";
+			};
+			name = Release;
+		};
+		24D7226D2627E986006A8CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				INFOPLIST_FILE = TTPhotoPickerViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTPhotoPickerViewController;
+			};
+			name = Debug;
+		};
+		24D7226E2627E986006A8CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFB7855ES9;
+				INFOPLIST_FILE = TTPhotoPickerViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.app.TTPhotoPickerViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TTPhotoPickerViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D722322627E983006A8CFB /* Build configuration list for PBXProject "TTPhotoPickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D722642627E986006A8CFB /* Debug */,
+				24D722652627E986006A8CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D722662627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D722672627E986006A8CFB /* Debug */,
+				24D722682627E986006A8CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D722692627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D7226A2627E986006A8CFB /* Debug */,
+				24D7226B2627E986006A8CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D7226C2627E986006A8CFB /* Build configuration list for PBXNativeTarget "TTPhotoPickerViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D7226D2627E986006A8CFB /* Debug */,
+				24D7226E2627E986006A8CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D7222F2627E983006A8CFB /* Project object */;
+}

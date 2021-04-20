@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  TTPhotoPickerViewController
+//
+//  Created by tangshuanghui on 2021/4/16.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/******* 全局头文件 *******/
+#ifdef __OBJC__
+// <>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Photos/Photos.h>
+#import <PhotosUI/PhotosUI.h>
+#import <PhotosUI/PHPhotoLibrary+PhotosUISupport.h>
+// ""
+#import "AppDelegate.h"
+#import "TTPHAsset.h"
+
+#endif
+
+#define kSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define kSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define kImageMaxNumber 9
+
+/// block
+typedef void(^ClickPHAssetBlock)(TTPHAsset * model);
+
+/** 根据RGB16进制值获取颜色（16进制->10进制） */
+#define kColorWithHEXA(HEXValue, alphaValue) [UIColor colorWithRed:((CGFloat)((HEXValue & 0xFF0000) >> 16))/255.0 green:((CGFloat)((HEXValue & 0xFF00) >> 8))/255.0 blue:((CGFloat)(HEXValue & 0xFF))/255.0 alpha:(alphaValue)]
+#define kColorWithHEX(HEXValue) kColorWithHEXA(HEXValue, 1.0)
+
+//查看程序运行位置
+#define  CheckRunWhere     NSLog(@"%s",__func__);
+
+#ifdef DEBUG
+//调试状态
+#define NSLog(format,...) printf("%s:(%d) 🌱: %s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+#define kIsProduction NO
+#else
+#define NSLog(format, ...)
+#define kIsProduction YES
+#endif
+
+#endif /* PrefixHeader_pch */
