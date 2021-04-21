@@ -16,6 +16,7 @@
 @property (nonatomic, strong) TTPhotoPageTopView * headerView;
 @property (nonatomic, strong) TTPhotoPageCollectionView * photoView;
 @property (nonatomic, strong) TTPhotoPageBottomView * bottomView;
+@property (nonatomic, assign) NSInteger currentIndex;
 
 @end
 
@@ -60,6 +61,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupPageViewControllerUI];
+    self.currentIndex = self.startIndex;
+    [self updateIndexNumber];
     self.headerView.isMoreSelected = self.isMoreSelected;
     [self.headerView.backButton addTarget:self action:@selector(backButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [self.headerView updatePhotoNumber:self.selectedList.count maxNumber:kImageMaxNumber];
@@ -69,10 +72,19 @@
     self.photoView.hidden = self.selectedList.count == 0 ? YES : NO;
     self.photoView.clickBlock = ^(TTPHAsset * model) {
         NSInteger index = [weakSelf.photoList indexOfObject:model];
-        [weakSelf.pageViewController setViewControllers:@[[weakSelf viewControllerAtIndex:index]]
-                                          direction:UIPageViewControllerNavigationDirectionForward
-                                           animated:NO
-                                         completion:nil];
+        if (self.currentIndex < index) {
+            [weakSelf.pageViewController setViewControllers:@[[weakSelf viewControllerAtIndex:index]]
+                                              direction:UIPageViewControllerNavigationDirectionForward
+                                               animated:YES
+                                             completion:nil];
+        } else {
+            [weakSelf.pageViewController setViewControllers:@[[weakSelf viewControllerAtIndex:index]]
+                                              direction:UIPageViewControllerNavigationDirectionReverse
+                                               animated:YES
+                                             completion:nil];
+        }
+        weakSelf.currentIndex = index;
+        [weakSelf updateIndexNumber];
         weakSelf.bottomView.model = model;
     };
     
@@ -172,6 +184,9 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     NSUInteger index = [self indexOfViewController:(TTPhotoViewController *)viewController];
     if ((index == 0) || (index == NSNotFound)) {
+        if (index == 0 && self.isCycle) {
+            return [self viewControllerAtIndex:(self.photoList.count - 1)];
+        }
         return nil;
     }
     index--;
@@ -190,6 +205,9 @@
     }
     index++;
     if (index == [self.photoList count]) {
+        if (self.isCycle) {
+            return [self viewControllerAtIndex:0];
+        }
         return nil;
     }
     return [self viewControllerAtIndex:index];
@@ -199,8 +217,15 @@
 {
     // 此方法确定当前页位置
     NSUInteger index = [self indexOfViewController:(TTPhotoViewController *)[pageViewController.viewControllers firstObject]];
+    self.currentIndex = index;
+    [self updateIndexNumber];
     TTPHAsset * model = self.photoList[index];
     [self.bottomView setModel:model];
+}
+
+- (void)updateIndexNumber
+{
+    [self.headerView updateTitleNumber:[NSString stringWithFormat:@"%ld/%ld", (long)(self.currentIndex + 1), (long)self.photoList.count]];
 }
 
 #pragma mark - 根据index得到对应的UIViewController

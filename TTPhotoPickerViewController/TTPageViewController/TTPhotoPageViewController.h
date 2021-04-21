@@ -18,6 +18,8 @@ typedef void(^BackReloadBlock)(void);
 @property (nonatomic, assign) NSInteger startIndex;
 @property (nonatomic, assign) BOOL isMoreSelected;
 @property (nonatomic, copy) BackReloadBlock reloadBlock;
+/// 是否循环滚动
+@property (nonatomic, assign) BOOL isCycle;
 
 @end
 

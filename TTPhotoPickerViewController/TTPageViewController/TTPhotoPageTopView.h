@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)updatePhotoNumber:(NSInteger)selectedNumber maxNumber:(NSInteger)maxNumber;
 
+- (void)updateTitleNumber:(NSString *)title;
+
 @end
 
 NS_ASSUME_NONNULL_END

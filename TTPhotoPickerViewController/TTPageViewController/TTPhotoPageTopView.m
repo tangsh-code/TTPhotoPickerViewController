@@ -46,10 +46,9 @@
     [self addSubview:self.containerView];
 }
 
-- (void)hiddenTitleAndNumber:(BOOL)isHidden
+- (void)updateTitleNumber:(NSString *)title
 {
-    self.titleLabel.hidden = isHidden;
-    self.numberLabel.hidden = isHidden;
+    self.titleLabel.text = title;
 }
 
 - (void)refreshShowViewUI

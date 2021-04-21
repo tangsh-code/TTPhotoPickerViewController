@@ -299,6 +299,7 @@
     photoPageViewController.selectedList = self.selectedList;
     photoPageViewController.startIndex = self.currentIndex;
     photoPageViewController.isMoreSelected = self.isMoreSelected;
+    photoPageViewController.isCycle = YES;
     __weak typeof(self) weakSelf = self;
     photoPageViewController.reloadBlock = ^{
         [weakSelf.collectionView reloadData];

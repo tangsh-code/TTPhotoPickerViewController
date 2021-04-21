@@ -20,6 +20,11 @@
 
 @implementation TTPhotoViewController
 
+- (void)dealloc
+{
+    CheckRunWhere
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -62,6 +67,29 @@
     } else {
         self.previewImageView.image = self.model.thumbnailImage;
         __weak typeof(self) weakSelf = self;
+//        PHImageRequestOptions *imageRequestOptions = [[PHImageRequestOptions alloc] init];
+//        imageRequestOptions.networkAccessAllowed = YES;
+//        CGFloat screenScale = [UIScreen mainScreen].scale;
+//        PHCachingImageManager *cachingImageManager = [[PHCachingImageManager alloc] init];
+//        CGSize size = [UIScreen mainScreen].bounds.size;
+//        [cachingImageManager requestImageForAsset:asset
+//                                       targetSize:CGSizeMake(size.width * screenScale, size.height * screenScale)
+//                                      contentMode:PHImageContentModeAspectFill
+//                                          options:imageRequestOptions
+//                                    resultHandler:^(UIImage *_Nullable result, NSDictionary *_Nullable info) {
+//                                if (NO == [weakSelf.representedAssetIdentifier
+//                                        isEqualToString:asset.localIdentifier])
+//                                    return;
+//                                if (nil == result) {
+//                                    NSLog(@"未请求到图片");
+//                                    return;
+//                                }
+//                                weakSelf.previewImageView.image = result;
+//                                weakSelf.model.previewImage = result;
+//                                [weakSelf resizeSubviews];
+//                                    }];
+//        cachingImageManager.allowsCachingHighQualityImages = NO;
+
         PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
         options.resizeMode = PHImageRequestOptionsResizeModeFast;
         //图片质量
@@ -74,16 +102,16 @@
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    if (![weakSelf.representedAssetIdentifier
+                    if (NO == [weakSelf.representedAssetIdentifier
                             isEqualToString:asset.localIdentifier])
                         return;
-                    if (!result)
+                    if (nil == result) {
+                        NSLog(@"未请求到图片");
                         return;
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        weakSelf.previewImageView.image = result;
-                        weakSelf.model.previewImage = result;
-                        [weakSelf resizeSubviews];
-                    });
+                    }
+                    weakSelf.previewImageView.image = result;
+                    weakSelf.model.previewImage = result;
+                    [weakSelf resizeSubviews];
                 });
             }];
         });
